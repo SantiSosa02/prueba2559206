@@ -1,0 +1,83 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/formulario.css">
+<link rel="stylesheet" href="../css/ventas.css">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <!-- Tabla 1 -->
+      <form class="col-md-12">
+         <h2 class="form_title">Agregar Venta</h2>
+
+        <div class="form_container">
+            <div class="form_group">
+                <select id="categoria" class="form_input">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="categoria1">Accesorios</option>
+                    <option value="categoria2">Repuestos</option>
+                    <option value="categoria3">Prendas</option>
+                    <!-- Agrega más opciones de categoría según sea necesario -->
+                </select>
+                <label for="categoria" class="form_label">Categoría</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="date" id="apellidos" class="form_input"
+                    placeholder=" ">
+                <label for="name" class="form_label">Fecha venta</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <select id="categoria" class="form_input">
+                    <option value="" disabled selected>Selecciona un Metodo de pago</option>
+                    <option value="categoria1">Efectivo</option>
+                    <option value="categoria2">Credito</option>
+                
+                    <!-- Agrega más opciones de categoría según sea necesario -->
+                </select>
+                <label for="categoria" class="form_label">Metodo de pago</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <div class="password_container">
+                    <input type="number" id="password" class="form_input
+                        password_field" placeholder=" ">
+                    <label for="password" class="form_label">Valor Factura</label>
+                    <span class="form_line"></span>
+                </div>
+            </div>
+            <div class="form_group">
+                <select id="categoria" class="form_input">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="categoria1">Accesorios</option>
+                    <option value="categoria2">Repuestos</option>
+                    <option value="categoria3">Prendas</option>
+                    <!-- Agrega más opciones de categoría según sea necesario -->
+                </select>
+                <label for="categoria" class="form_label">Categoría</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <select id="categoria" class="form_input">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="categoria1">Accesorios</option>
+                    <option value="categoria2">Repuestos</option>
+                    <option value="categoria3">Prendas</option>
+                    <!-- Agrega más opciones de categoría según sea necesario -->
+                </select>
+                <label for="categoria" class="form_label">Categoría</label>
+                <span class="form_line"></span>
+            </div>
+            
+            <div class="botones">
+                <button id="btnRegistrarUsuario" type="button" class="btn
+                    btn-success">Registrar</button>
+                <a href="/usuarios"><button type="button" class="btn
+                        btn-danger">Cancelar</button></a>
+            </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+

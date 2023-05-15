@@ -1,0 +1,51 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/formulario.css">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center align-items-center">
+      <form class="col-md-4 col-lg-4 col-xl-4">
+        <h2 class="form_title">Agregar Producto</h2>
+
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" id="nombre" class="form_input" placeholder="
+                    ">
+                <label for="name" class="form_label">Nombres</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <select id="categoria" class="form_input">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="categoria1">Accesorios</option>
+                    <option value="categoria2">Repuestos</option>
+                    <option value="categoria3">Prendas</option>
+                    <!-- Agrega más opciones de categoría según sea necesario -->
+                </select>
+                <label for="categoria" class="form_label">Categoría</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" id="cantidad" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Cantidad</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" id="precioVenta" class="form_input"
+                    placeholder=" ">
+                <label for="name" class="form_label">Precio Venta</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="botones">
+                <button id="btnRegistrarProducto" type="button" class="btn
+                    btn-success">Registrar</button>
+                <a href="/productos"><button type="button" class="btn
+                        btn-danger">Cancelar</button></a>
+            </div>
+        </div>
+      </form>
+      <div class="col-md-5 col-lg-5 col-xl-5" id="mensaje"></div>
+    </div>
+  </div>
+</div>
+<script src="../js/productos.js"></script>
+{{> footer}}

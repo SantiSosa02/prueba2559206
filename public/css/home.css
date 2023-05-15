@@ -1,0 +1,30 @@
+.col-md-12 {
+  
+    height: 40vh; /* Utilizamos vh (viewport height) para que se ajuste al 40% del alto de la pantalla */
+    width: 40vw; /* Utilizamos vw (viewport width) para que se ajuste al 40% del ancho de la pantalla */
+    margin: 0 auto; /* Margen automático en los ejes horizontal y vertical para centrar la caja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.col-md-6 {
+  
+    height: auto;
+    width: 65%;
+    font-size: 2vw; /* Utilizamos vw para que el tamaño de fuente se ajuste al ancho de la pantalla */
+    opacity: 0.3;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .caja {
+        height: 60vh;
+        width: 80vw;
+    }
+
+    .container {
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,41 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/formulario.css">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center align-items-center">
+      <form class="col-md-4 col-lg-4 col-xl-4">
+         <h2 class="form_title">Agregar Abono</h2>
+    
+    <div class="form_container">
+        <div class="form_group">
+            <input type="text" id="numeroFactura" class="form_input" placeholder=" " value="12345" disabled >            
+            <label for="name" class="form_label" >Numero factura</label>
+            <span class="form_line"></span>
+        </div>
+         <div class="form_group">
+            <input type="date" id="fechaAbono" class="form_input" placeholder=" "  value="23/06/2023" disabled>
+            <label for="name" class="form_label">Fecha bono</label>
+            <span class="form_line"></span>
+        </div>
+         <div class="form_group">
+            <input type="number" id="valorAbono" class="form_input" placeholder=" " value="60.000" disabled>
+            <label for="name" class="form_label">Valor Abono</label>
+            <span class="form_line"></span>
+        </div>
+          <div class="form_group">
+            <input type="number" id="valorAbono" class="form_input" placeholder=" " value="120.000" disabled>
+            <label for="name" class="form_label">Valor Abono</label>
+            <span class="form_line"></span>
+        </div>
+        <div class="botones">
+            <a href="/abonos"><button  type="button" class="btn btn-success">Volver</button></a>
+        </div>
+    </div>
+      </form>
+    
+    </div>
+  </div>
+</div>
+<script src="../js/abonos.js"></script>
+{{> footer}}

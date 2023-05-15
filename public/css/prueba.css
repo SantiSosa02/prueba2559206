@@ -1,0 +1,26 @@
+.col-md-12{
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.col-md-4{
+    background-color: blue;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.form-container{
+    background-color: blueviolet;
+ 
+}
+
+.col-md-3{
+    background-color: brown;
+    margin-left: 40px;
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 10px;
+}

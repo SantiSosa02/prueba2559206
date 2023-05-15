@@ -1,0 +1,63 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/modulos.css">
+<div class="total">
+<div class="col-md-9">
+  <h1>Abonos</h1>
+  <div class="contenedor">
+    <div class="buscador">
+      
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Buscar abonos...">
+        <div class="boton-buscar">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid
+            fa-search"></i></button>
+            </div>
+      </form>
+      <br><br><br>
+      <div class="botones">
+        <button class="btn btn-danger"><i class="fa-regular fa-file-pdf"></i></button>
+        <button class="btn btn-success"><i class="fa-regular fa-file-excel"></i></button>
+      </div>
+      <div class="add">
+      <a href="/agregarAbono"><button  class="btn btn-primary">Agregar abono</i></button></a>
+
+    </div>
+    </div>
+    
+  </div>
+  <div class="table-container">
+
+<table class="table table-striped-columns">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Numero factura</th>
+      <th scope="col">Fecha abono</th>
+      <th scope="col">Valor abono</th>
+      <th scope="col">Valor restante</th>
+      <th scope="col">Estado</th>
+       <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each lista_abonos}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{numeroFactura}}</td>
+      <td>{{fechaAbono}}</td>
+      <td>{{valorAbono}}</td>
+      <td>{{valorRestante}}</td>
+      <td>{{estado}}</td>
+      <td>
+        <a href="/detalleAbono"><button class="btn btn-warning"><i class="fa-solid fa-eye"></i></button></a>
+        <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+      
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+{{> footer}}

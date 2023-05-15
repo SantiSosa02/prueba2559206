@@ -1,0 +1,30 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/formulario.css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
+            <form class="col-md-4 col-lg-4 col-xl-4">
+                <h2 class="form_title">Agregar entrada </h2>
+
+                <div class="form_container">
+                    <div class="form_group">
+                        <input type="number" id="cantidad" class="form_input"
+                            placeholder=" ">
+                        <label for="name" class="form_label">Cantidad</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="botones">
+                        <button id="btnRegistrarProducto" type="button"
+                            class="btn
+                            btn-success">Registrar</button>
+                        <a href="/productos"><button type="button" class="btn
+                                btn-danger">Cancelar</button></a>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-5 col-lg-5 col-xl-5" id="mensaje"></div>
+        </div>
+    </div>
+</div>
+<script src="../js/productoEntrada.js"></script>
+{{> footer}}

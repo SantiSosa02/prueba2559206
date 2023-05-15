@@ -1,0 +1,10 @@
+.col-md-12{
+  
+    height: 50%;
+
+}
+.col-md-6{
+  
+    display: flex;
+    margin-top: 10%;
+}

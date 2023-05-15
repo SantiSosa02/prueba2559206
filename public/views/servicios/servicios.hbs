@@ -1,0 +1,60 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/modulos.css">
+<div class="total">
+<div class="col-md-9">
+  <h1>Servicios</h1>
+  <div class="contenedor">
+    <div class="buscador">
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Buscar servicios...">
+        <div class="boton-buscar">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid
+            fa-search"></i></button>
+        </div>
+      </form>
+      <br><br><br>
+      <div class="botones">
+        <button class="btn btn-danger"><i class="fa-regular fa-file-pdf"></i></button>
+        <button class="btn btn-success"><i class="fa-regular fa-file-excel"></i></i></button>
+      </div>
+      <div class="add">
+      <a href="/agregarServicio"><button  class="btn btn-primary">Agregar Servicio</i></button></a>
+    </div>
+    </div>
+    
+  </div>
+  <div class="table-container">
+
+<table class="table table-striped-columns">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">PrecioVenta</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each lista_servicios}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{nombre}}</td>
+      <td>{{precioVenta}}</td>
+      <td>{{estado}}</td>
+      <td>
+       <a href="/editarServicio"><button class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button></a>
+        <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+        <label class="switch">
+          <input type="checkbox" id="toggleBtn">
+            <span class="slider round"></span>
+        </label>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+{{> footer}}

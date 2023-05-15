@@ -1,0 +1,62 @@
+{{> navbar}}
+<link rel="stylesheet" href="../css/modulos.css">
+<div class="total">
+<div class="col-md-9">
+  <h1>Usuarios</h1>
+  <div class="contenedor">
+    <div class="buscador">
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Buscar usuario...">
+        <div class="boton-buscar">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid
+            fa-search"></i></button>
+            </div>
+      </form>
+      <br><br><br>
+      <div class="botones">
+        <button class="btn btn-danger"><i class="fa-regular fa-file-pdf"></i></button>
+        <button class="btn btn-success"><i class="fa-regular fa-file-excel"></i></i></button>
+      </div>
+      <div class="add">
+      <a href="/agregarUsuario"><button  class="btn btn-primary">Agregar usuario</i></button></a>
+    </div>
+    </div>
+    
+  </div>
+  <div class="table-container ">
+
+<table class="table table-striped-columns">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each lista_usuarios}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{nombre}}</td>
+      <td>{{apellido}}</td>
+      <td>{{correo}}</td>
+      <td>{{estado}}</td>
+      <td>
+        <a href="/editarUsuario"><button class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button></a>
+        <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+        <label class="switch">
+          <input type="checkbox" id="toggleBtn">
+            <span class="slider round"></span>
+        </label>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+{{> footer}}

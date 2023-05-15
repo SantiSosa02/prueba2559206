@@ -1,0 +1,23 @@
+.footer {
+   background-color: aqua;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee9e9;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; 
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    
+  }
+ .footer-content{
+
+  margin-left: 300px;
+  width: 600px;
+  height: 70px;
+  margin-top: -13px;
+ }
+ 
