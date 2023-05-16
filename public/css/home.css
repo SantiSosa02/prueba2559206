@@ -1,3 +1,6 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .col-md-12 {
   
     height: 40vh; /* Utilizamos vh (viewport height) para que se ajuste al 40% del alto de la pantalla */

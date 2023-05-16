@@ -1,56 +1,73 @@
 {{> navbar}}
-<link rel="stylesheet" href="../css/modulos.css">
-<div class="total">
-  <div class="caja">
-    <h1>Detalle venta</h1>
-    <div class="contDetalle">
-      <br><br>
-      <h3>Productos</h3>
-      <div class="table-container">
+<link rel="stylesheet" href="../css/detalleventa.css">
+<div class="col-md-12 d-flex justify-content-center align-items-center">
+    <div class="contenedorForm">
+        <form class="col-md-4 col-lg-4 col-xl-4">
+            <h2 class="form_title">Detalles de venta</h2>
+            <br><br>
+              
 
-        <table class="table table-striped-columns">
-          <thead>
-            <tr>
-              <th scope="col">Producto</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Precio</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each lista_productosVenta}}
-            <tr>
-              <td>{{producto}}</td>
-              <td>{{cantidad}}</td>
-              <td>{{precio}}</td>
-            </tr>
-            {{/each}}
-          </tbody>
-        </table>
-      </div>
-      <br><br><br>
-      <h3>Servicios</h3>
-      <div class="table-container">
-
-        <table class="table table-striped-columns">
-          <thead>
-            <tr>
-              <th scope="col">Servicio</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Precio</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each lista_serviciosVenta}}
-            <tr>
-              <td>{{servicio}}</td>
-              <td>{{cantidad}}</td>
-              <td>{{precio}}</td>
-            </tr>
-            {{/each}}
-          </tbody>
-        </table>
-      </div>
-      </div>
-      </div>
+                <table class="table table-striped-columns">
+                    <thead>
+                      <h2>Productos</h2>
+                      <br>
+                        <tr>
+                          
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio unidad</th>
+                            <th scope="col">Precio total</th>
+                      
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each lista_productosVenta}}
+                        <tr>
+                   
+                            <td>{{producto}}</td>
+                            <td>{{cantidad}}</td>
+                            <td>{{precioU}}</td>
+                            <td>{{precioT}}</td>
+                            
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+              
+              <br><br>
+                <table class="table table-striped-columns">
+                    <thead>
+                      <h2>Servicios</h2>
+                      <br>
+                        <tr>
+                           
+                            <th scope="col">servicio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio unidad</th>
+                            <th scope="col">Precio total</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each lista_serviciosVenta}}
+                        <tr>
+      
+                            <td>{{servicio}}</td>
+                            <td>{{cantidad}}</td>
+                            <td>{{precioU}}</td>
+                            <td>{{precioT}}</td>
+                            
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+               
+            </div>
+        </form>
+        <br>
     </div>
-    {{> footer}}
+ 
+</div>
+
+<script src="../js/agregarVentas.js"></script>
+{{> footer}}

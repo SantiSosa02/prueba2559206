@@ -12,10 +12,17 @@
   }
   
 .col-md-12{
-  height: 90vh;
-  display: flex;
-  align-items: center;
+  height: 100vh;
+
+
 }
+
+.contenedorForm{
+
+    width: 80%;
+    height: 92%;
+    margin-top: -15em;
+  }
   
   .col-md-4{
     background-color: rgb(255, 255, 255);
@@ -24,10 +31,12 @@
     border-radius: 10px;
     box-shadow: 0 5px 15px 5px rgb(0 0 0 / 30%);
     text-align: center;
-    margin-left: 200px;
-    
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 3.2em;
    
   }
+
   .col-md-6{
     background-color: rgb(255, 255, 255);
     margin: auto;
@@ -44,16 +53,17 @@
     opacity: 0.7;
     margin:0;
     border-radius: 10px;
+    box-shadow:1px 2px 2px 0;
     display: flex;
     justify-content: center;
     display: none;
+    border: 1px solid #2ABAEA;
     padding: 10px;
-    margin-right: 280px;
-    width: 20%;
+    margin-left: 25%;
+    width: 50%;
   
   }
-  
-  
+
   .form_title {
     font-size: 2em;
     margin-bottom: .5em;
@@ -111,14 +121,28 @@
     justify-content: space-between;
 }
 
-.password_container {
+.valor_container {
     flex-grow: 1;
 }
 
-.show_password_container {
+.cantidad_container {
+    flex-grow: 1;
+}
+
+.show_valor_container {
     margin-left: 10px;
 }
 
 
+.mt{
+   
+    width: 50%;
+}
 
-  
+.ct{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -42px;
+    justify-content: center; 
+}
+

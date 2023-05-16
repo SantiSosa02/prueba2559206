@@ -20,7 +20,7 @@ const validarUsuario = () => {
     return new Promise((resolve, reject) => {
         for (let i = 0; i < usuarios.length; i++) {
             if (usuarios[i].usuario === usuario && usuarios[i].password === password) {
-            resolve(`<span style="color: green;">Bienvenido ${usuario}</span>`);
+            window.location.href="/";
         } else {
             reject(`<span style="color: red;">El usuario o la contraseña son incorrectos</span>`);
         }

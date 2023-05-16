@@ -1,83 +1,170 @@
 {{> navbar}}
-<link rel="stylesheet" href="../css/formulario.css">
 <link rel="stylesheet" href="../css/ventas.css">
+<div class="col-md-12 d-flex justify-content-center align-items-center">
+    <div class="contenedorForm">
+        <form class="col-md-4 col-lg-4 col-xl-4">
+            <h2 class="form_title">Agregar Venta</h2>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <!-- Tabla 1 -->
-      <form class="col-md-12">
-         <h2 class="form_title">Agregar Venta</h2>
-
-        <div class="form_container">
-            <div class="form_group">
-                <select id="categoria" class="form_input">
-                    <option value="" disabled selected>Selecciona una categoría</option>
-                    <option value="categoria1">Accesorios</option>
-                    <option value="categoria2">Repuestos</option>
-                    <option value="categoria3">Prendas</option>
-                    <!-- Agrega más opciones de categoría según sea necesario -->
-                </select>
-                <label for="categoria" class="form_label">Categoría</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="date" id="apellidos" class="form_input"
-                    placeholder=" ">
-                <label for="name" class="form_label">Fecha venta</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <select id="categoria" class="form_input">
-                    <option value="" disabled selected>Selecciona un Metodo de pago</option>
-                    <option value="categoria1">Efectivo</option>
-                    <option value="categoria2">Credito</option>
-                
-                    <!-- Agrega más opciones de categoría según sea necesario -->
-                </select>
-                <label for="categoria" class="form_label">Metodo de pago</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <div class="password_container">
-                    <input type="number" id="password" class="form_input
-                        password_field" placeholder=" ">
-                    <label for="password" class="form_label">Valor Factura</label>
+            <div class="form_container">
+                <div class="form_group">
+                    <select id="categoria" class="form_input">
+                        <option value="" disabled selected>Selecciona una
+                            cliente</option>
+                        <option value="categoria1">Santiago sosa</option>
+                        <option value="categoria2">Carlos Morales</option>
+                        <!-- Agrega más opciones de categoría según sea necesario -->
+                    </select>
+                    <label for="categoria" class="form_label">Cliente</label>
                     <span class="form_line"></span>
                 </div>
-            </div>
-            <div class="form_group">
-                <select id="categoria" class="form_input">
-                    <option value="" disabled selected>Selecciona una categoría</option>
-                    <option value="categoria1">Accesorios</option>
-                    <option value="categoria2">Repuestos</option>
-                    <option value="categoria3">Prendas</option>
-                    <!-- Agrega más opciones de categoría según sea necesario -->
-                </select>
-                <label for="categoria" class="form_label">Categoría</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <select id="categoria" class="form_input">
-                    <option value="" disabled selected>Selecciona una categoría</option>
-                    <option value="categoria1">Accesorios</option>
-                    <option value="categoria2">Repuestos</option>
-                    <option value="categoria3">Prendas</option>
-                    <!-- Agrega más opciones de categoría según sea necesario -->
-                </select>
-                <label for="categoria" class="form_label">Categoría</label>
-                <span class="form_line"></span>
-            </div>
-            
-            <div class="botones">
-                <button id="btnRegistrarUsuario" type="button" class="btn
-                    btn-success">Registrar</button>
-                <a href="/usuarios"><button type="button" class="btn
-                        btn-danger">Cancelar</button></a>
-            </div>
-        </div>
-      </form>
-    </div>
-    </div>
-  </div>
+                <div class="form_group">
+                    <input type="date" id="fechaVenta" class="form_input"
+                        placeholder=" ">
+                    <label for="name" class="form_label">Fecha venta</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <select id="categoria" class="form_input">
+                        <option value="" disabled selected>Selecciona un metodo
+                            de
+                            pago</option>
+                        <option value="categoria1">Efectivo</option>
+                        <option value="categoria2">Credito</option>
+                        <!-- Agrega más opciones de categoría según sea necesario -->
+                    </select>
+                    <label for="categoria" class="form_label">Metodo de pago</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <div class="valor_container">
+                        <input type="number" id="valorVenta" class="form_input
+                            password_field" placeholder=" ">
+                        <label for="number" class="form_label">Valor venta</label>
+                        <span class="form_line"></span>
+                    </div>
+                </div>
 
+                <div class="form_group">
+                    <select id="productosVenta" class="form_input">
+                        <option value="" disabled selected>Selecciona los
+                            productos</option>
+                        <option value="producto1">Zapatillas</option>
+                        <option value="producto2">Guantes</option>
+                        <!-- Agrega más opciones de categoría según sea necesario -->
+                    </select>
+                    <label for="categoria" class="form_label">Productos</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="caja">
+                    <div class="form_group mt">
+                        <div class="cantidad_container">
+                            <input type="number" id="cantidad" class="form_input
+                                password_field" placeholder=" ">
+                            <label for="number" class="form_label">Cantidad</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_group ct">
+                        <button class="btn btn-info">Añadir</button>
+                    </div>
+                </div>
+
+                <table class="table table-striped-columns">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio unidad</th>
+                            <th scope="col">Precio total</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each lista_productosVenta}}
+                        <tr>
+                            <td>{{id}}</td>
+                            <td>{{producto}}</td>
+                            <td>{{cantidad}}</td>
+                            <td>{{precioU}}</td>
+                            <td>{{precioT}}</td>
+                            <td>
+                                <button class="btn btn-warning"><i
+                                        class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn btn-danger"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="form_group">
+                    <select id="productosVenta" class="form_input">
+                        <option value="" disabled selected>Selecciona los
+                            Servicios</option>
+                        <option value="producto1">Mantenimiento</option>
+                        <option value="producto2">Lavada</option>
+                        <!-- Agrega más opciones de categoría según sea necesario -->
+                    </select>
+                    <label for="categoria" class="form_label">Servicios</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="caja">
+                    <div class="form_group mt">
+                        <div class="cantidad_container">
+                            <input type="number" id="cantidad" class="form_input
+                                password_field" placeholder=" ">
+                            <label for="number" class="form_label">Cantidad</label>
+                            <span class="form_line"></span>
+                        </div>
+                    </div>
+                    <div class="form_group ct">
+                        <button class="btn btn-info">Añadir</button>
+                    </div>
+                </div>
+
+                <table class="table table-striped-columns">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">servicio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio unidad</th>
+                            <th scope="col">Precio total</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each lista_serviciosVenta}}
+                        <tr>
+                            <td>{{id}}</td>
+                            <td>{{servicio}}</td>
+                            <td>{{cantidad}}</td>
+                            <td>{{precioU}}</td>
+                            <td>{{precioT}}</td>
+                            <td>
+                                <button class="btn btn-warning"><i
+                                        class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn btn-danger"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="botones">
+                    <button id="btnRegistrarVenta" type="button" class="btn
+                        btn-success">Registrar</button>
+                    <a href="/ventas"><button type="button" class="btn
+                            btn-danger">Cancelar</button></a>
+                </div>
+            </div>
+        </form>
+        <br>
+           <div class="col-md-5 col-lg-5 col-xl-5" id="mensaje"></div>
+    </div>
+ 
+</div>
+
+<script src="../js/agregarVentas.js"></script>
+{{> footer}}

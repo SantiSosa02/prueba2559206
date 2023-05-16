@@ -232,17 +232,20 @@ app.get("/ventas",(req,res)=>{
 app.get('/detalleVenta',(req,res)=>{
     const productosVenta=[
         {
-            producto:"Termo",
-            cantidad:2,
-            precio:20000
+            producto:'lanta',
+            cantidad:'1',
+            precioU:50000,
+            precioT:50000
         }
     ]
     
     const serviciosVenta=[
         {
-            servicio:"Mantenimiento",
-            cantidad:2,
-            precio:20000
+          
+            servicio:'Engrasada',
+            cantidad:'1',
+            precioU:50000,
+            precioT:50000
         }
     ]
     res.render("ventas/detalleVenta",{
@@ -317,8 +320,59 @@ app.get('/editarServicio',(req,res)=>{
 app.get('/prueba',(req,res)=>{
     res.render("prueba")
 });
-app.get('/agregarVenta',(req,res)=>{
-    res.render("ventas/agregarVenta")
+app.get("/agregarVenta",(req,res)=>{
+    const productosVenta=[
+        {
+            id:3,
+            producto:'67',
+            cantidad:'2023/12/56',
+            precioU:100000,
+            precioT:0
+        },
+        {
+            id:3,
+            producto:'67',
+            cantidad:'2023/12/56',
+            precioU:100000,
+            precioT:0
+        },
+        {
+            id:3,
+            producto:'67',
+            cantidad:'2023/12/56',
+            precioU:100000,
+            precioT:0
+           
+        }
+    ]
+    const serviciosVenta=[
+        {
+            id:3,
+            servicio:'Mantenimiento',
+            cantidad:'1',
+            precioU:60000,
+            precioT:60000
+        },
+        {
+            id:3,
+            servicio:'Lavada',
+            cantidad:'1',
+            precioU:20000,
+            precioT:20000
+        },
+        {
+            id:3,
+            servicio:'Engrasada',
+            cantidad:'1',
+            precioU:50000,
+            precioT:50000
+           
+        }
+    ]
+    res.render("ventas/agregarVenta",{
+        lista_productosVenta:productosVenta,
+        lista_serviciosVenta:serviciosVenta
+    });
 });
 app.get('/agregarAbono',(req,res)=>{
     res.render("abonos/agregarAbono")

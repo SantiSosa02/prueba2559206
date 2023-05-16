@@ -1,10 +1,147 @@
-.col-md-12{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
   
-    height: 50%;
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+.col-md-12{
+  height: 220vh;
 
 }
-.col-md-6{
+
+.contenedorForm{
+
+    width: 80%;
+    height: 92%;
+    margin-top: -15em;
+  }
   
-    display: flex;
+  .col-md-4{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 5px rgb(0 0 0 / 30%);
+    text-align: center;
+    width: 90%;
     margin-top: 10%;
+    margin-left: 3.2em;
+   
+  }
+
+  .col-md-6{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 5px rgb(0 0 0 / 30%);
+    text-align: center;
+    width: 30%;
+    height: 30%;
+  }
+
+  .col-md-5 {
+    background-color: #94D6EB;
+    opacity: 0.7;
+    margin:0;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    display: none;
+
+    padding: 10px;
+    margin-left: 25%;
+    width: 50%;
+  
+  }
+
+  .form_title {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  
+  .form_container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+  }
+  
+  .form_group {
+    position: relative;
+    --color: #5757577e
+  }
+  
+  .form_input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .form_input:focus + .form_label,
+  .form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #7db2ea;
+  }
+  
+  .form_label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+  }
+  
+
+  button{
+    opacity: 0.7;
+  }
+
+  .form_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.valor_container {
+    flex-grow: 1;
+}
+
+.cantidad_container {
+    flex-grow: 1;
+}
+
+.show_valor_container {
+    margin-left: 10px;
+}
+
+
+.mt{
+   
+    width: 50%;
+}
+
+.ct{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -42px;
+    justify-content: center; 
+}
+
