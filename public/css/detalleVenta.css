@@ -12,9 +12,7 @@
   }
   
 .col-md-12{
-  height: 100vh;
-
-
+  height: 120vh;
 }
 
 .contenedorForm{
@@ -144,5 +142,13 @@
     margin-left: 50%;
     margin-top: -42px;
     justify-content: center; 
+}
+
+.btn-info{
+ background-color: #71cbe6;
+ margin-top: -1200%;
+ border: 1px solid rgb(106, 223, 255) ;
+color: aliceblue;
+margin-left: 175%;
 }
 
